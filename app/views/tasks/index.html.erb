@@ -1,0 +1,8 @@
+<h1>My tasks</h1>
+<ul class="custom-control custom-checkbox">
+<% @tasks.each do |task| %>
+      <li class="custom-control-label" for="defaultChecked2"><input type="checkbox" class="custom-control-input" id="default"><%= link_to task.title, task_path(task.id)%></li>
+<% end %>
+</ul>
+<hr>
+<p><%= link_to "add new task", creation_path%></p>

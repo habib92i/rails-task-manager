@@ -1,5 +1,5 @@
 class DefaultCompletedToFalse < ActiveRecord::Migration[5.2]
   def change
-    change_column_default :completed, :boolean, false
+    change_column_default :tasks, :completed, false
   end
 end
